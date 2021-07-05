@@ -1,2 +1,18 @@
 # Hate_Speech_Classifier_In_Hinglish
 This is a personal project which classify the tweets into Non-Offensive, Hate Speech and Abusive. This project is based on the classical supervised machine learning algorithm. 
+
+In social media, we share our thoughts as we all have freedom of speech. But some people misuse this freedom to express hate or encourage violence towards a person or a group based on something such as race, religion, sex, or sexual orientation. This is known as Hate Speech. Hate speech thereby forms a big portion of content that is harmful and degrading to the mental health of users on social media in the long run. In the majority of a democratic country, there are hate speech violation laws including India. India prohibits hate speech by several sections of the Indian Penal Code, the Code of Criminal Procedure, and other laws which put limitations on the freedom of expression.
+
+Hate Speech Vs Abusive Speech:
+Hate speech is an act of offending a person or a group as a whole on the basis of certain key attributes such as religion, race, sexual orientation, gender, ideological background, mental and physical disability. Whereas, Abusive speech is offensive speech with a vague target and mild intention to hurt the sentiments of the receiver.
+
+Coming back to social media, as hate speech is a crime in India, to identify it is the responsibility of the social media platform. The problem in identifying hate speech in India remains a challenging task due to linguistic complexity. India is a diverse country with many languages, and according to census 2011, 43.63 % of the population speaks Hindi which is also the official language of Bihar, Delhi, Haryana, Jharkhand, Madhya Pradesh, Rajasthan, Uttarakhand, and Uttar Pradesh.
+
+People who are Hindi speakers use a new language called Hinglish, which is a hybrid of Hindi and English. Hinglish comes with complexity as it is a code-switching language, where the native language is written in the Roman script. The challenges with code-switch languages are many, they vary from person to person, they write different spelling for a particular word due to demographic reasons, no grammar rules, abbreviations, etc. That's why finding the sentiment of the tweets / comments / posts / blogs over the social media platform over the Hinglish Language is complex, time-consuming if we do it non-algorithmically. Hence there is the need for a Machine Learning solution.
+
+Formulating the ML Problem:
+1. A dataset that consists of non-offensive, Abusive and Hate-Speech in Hinglish Language.
+2. To create features that lead our model to be a robust classifier.
+3. Development of the models based on the features selection and Machine Learning Algorithm.
+
+The dataset publicly available prepared by the puneet and the team as Hindi-English Offensive Tweet (HEOT) dataset, consisting of tweets in Hindi-English code switched language split into three classes: non offensive, abusive and hate-speech. The HEOT dataset is derived from twitter containing tweets and its label. The user_ids are present in the text and there are also emoticons present in the texts. The goal in this case is to provide a robust model that can classify the text into hate or abusive or normal speech. The primary metric for the evaluation is the F1-Score. The reason for choosing F1-Score is to avoid type-I error & type-II error i.e False Positive & False Negative, if a user tweet is not a hate-speech and our model is classifying as hate speech that will impact the user performance and will bring the business impact for the company and if tweet is hate speech and classifier does not classify it, then the company policy has been affected here.
